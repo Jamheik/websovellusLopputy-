@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script type="module" src="main.js"></script>
+    <title>Websovellus Lopputyö</title>
+</head>
+<body>
+    <div class="topBar">
+        <h1 id="name">Jami Heikkinen</h1>
+        <nav class="links">
+            <a id="githubBtn" href="https://github.com/jamheik" target="_blank"></a>
+            <a id="linkedinBtn" href="https://www.linkedin.com/in/jami-heikkinen-167309a8/" target="_blank"></a>
+        </nav>      
+    </div>
+    <section class="weather">
+        <h2>Weather api call</h2>
+        <form id="weatherForm" onsubmit="getWeather(document.getElementById('cityInput').value); return false;">
+            <input type="text" id="cityInput" name="city" placeholder="Enter city name" required>
+            <button type="submit" class="getWeatherBtn">Get Weather</button>
+        </form>
+        <p id="temp"></p>
+    </section>
+    <div class="projects">
+        <table>
+            <tr>
+              <th>Project name</th>
+              <th>Link to project</th>
+            </tr>
+            <tr>
+              <td>Spedenspelit</td>
+              <td><a href="https://github.com/Jamheik/spedenSpelit" target="_blank">Github page</a></td>
+            </tr>
+            <tr>
+              <td>Bankautomat</td>
+              <td><a href="https://github.com/Jamheik/bankautomat" target="_blank">Github page</a></td>
+            </tr>
+          </table>
+    </div>
+        
+    
+</body>
+</html>
