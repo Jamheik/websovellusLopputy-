@@ -1,11 +1,13 @@
 body {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #f4f4f9;
+    color: #333333;
     padding-top: 8%;
+    font-family: 'Arial', sans-serif;
 }
-.getWeatherBtn{
-    background-color: #1e88e5;
-    color: #000000;
+
+.getWeatherBtn {
+    background-color: #007bff;
+    color: #ffffff;
     border: none;
     padding: 10px 20px;
     text-align: center;
@@ -14,81 +16,112 @@ body {
     font-size: 16px;
     margin: 4px 2px;
     cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
 }
-#temp{
-    font-size: 17px;
+
+.getWeatherBtn:hover {
+    background-color: #0056b3;
+}
+
+#temp {
+    font-size: 18px;
     font-weight: bold;
 }
+
 .topBar {
-    background-color: #1b1b1b;
+    background-color: #343a40;
     width: 100%;
     height: 8%;
     margin: 0px;
     position: fixed;
-    top: 0; 
-    left: 0; 
-    z-index: 1000; 
+    top: 0;
+    left: 0;
+    z-index: 1000;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 20px;
 }
-#name{
-    font-size: 20px;
+
+#name {
+    font-size: 22px;
     font-weight: bold;
-    text-align: middle;
-    padding-left: 10px;
+    color: #ffffff;
 }
 #githubBtn{
     background: url('./photos/githubLogo.png') no-repeat center;
     background-size: contain;
     border: none;
-    padding: 20px 40px;
+    padding: 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 18px; 
-    margin-right: 10px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 #linkedinBtn{
     background: url('./photos/linkedinLogo.png') no-repeat center;
     background-size: contain;
+    transform: scale(2);
     border: none;
-    padding: 40px 40px; 
+    padding: 20px;
+    margin-right: 20%;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 20px; 
-    margin-right: 10px;
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
-.weather{
+
+#githubBtn:hover {
+    transform: scale(1.1);
+}
+#linkedinBtn:hover{
+    transform: scale(2.2);
+}
+
+#linkedinBtn {
+    padding: 20px;
+}
+
+.weather {
     float: left;
-    width: 50%
+    width: 50%;
 }
-.projects{
+
+.projects {
     float: right;
     width: 50%;
-    
 }
-.links{
+
+.links {
     width: 10%;
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
 }
+
 table {
-    font-family: arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     border-collapse: collapse;
     width: 100%;
-  }
-  
-  td, th {
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+td, th {
     border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
+    padding: 12px;
+}
+
+th {
+    background-color: #007bff;
+    color: #ffffff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
 }
