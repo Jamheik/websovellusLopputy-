@@ -16,7 +16,7 @@
         </nav>      
     </header>
     <section class="weather">
-        <h2>Weather api call</h2>
+        <h2>Weather api call *once per minute*</h2>
         <form id="weatherForm" onsubmit="getWeather(document.getElementById('cityInput').value); return false;">
             <input type="text" id="cityInput" name="city" placeholder="Enter city name" required>
             <button type="submit" class="getWeatherBtn">Get Weather</button>
