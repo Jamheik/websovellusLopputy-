@@ -1,4 +1,3 @@
-# Project Evaluation
 
 ## HTML (25%)
 
