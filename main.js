@@ -41,6 +41,7 @@ export function getWeather(city) {
         }
 
         tempText.innerText = `Current weather in ${city}: ${temperature}°C, ${summary}.`;
+        alert(tempText.innerText);
     })
     .catch(error => console.error('There has been a problem:', error));
 }

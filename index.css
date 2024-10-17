@@ -94,7 +94,18 @@ body {
     float: right;
     width: 50%;
 }
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+}
 
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
 .links {
     width: 10%;
     display: flex;
@@ -124,4 +135,36 @@ th {
 
 tr:nth-child(even) {
     background-color: #f2f2f2;
+}
+
+@media (max-width: 768px) {
+    .weather, .projects {
+        float: none;
+        width: 100%;
+    }
+
+    #linkedinBtn, #githubBtn {
+        margin-right: 0;
+        margin-bottom: 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .topBar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .getWeatherBtn {
+        width: 100%;
+        box-sizing: border-box;
+    }
 }
