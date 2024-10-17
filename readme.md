@@ -73,7 +73,7 @@ Lines: 13-47
 
 5/5:  
 **Consistent use of Object-Oriented JavaScript principles.**  
--
+not implemented
 
 ## Asynchronous Operations (25%)
 
@@ -99,7 +99,7 @@ Lines: 17-19, 27-30
 
 5/5:  
 **Effective use of asynchronous data to enhance user experience (like filtering, sorting).**  
--
+not implemented
 
 ## Total
 
